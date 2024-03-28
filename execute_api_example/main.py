@@ -1,18 +1,12 @@
 import api
 
-project_name = "display"
-task_name = "variable"
+project_name = "GenerateLicense"
+task_name = "Main"
 external_variables = {
-    "number": 1,
-    "string": "string",
-    "boolean": True,
-    "array": [1, 2, 3],
-    "map": {
-        "a": "b"
-    }
+    "StringPassedByExecutor": "/cicd run license_generate -expiredDate -1 -licenseType 0 -productType 4 -uid d0a9dee6-e353-51a1-bf15-5f0934fb904e",
 }
 target_url = "http://192.168.1.30:16888/"
-api_key = "3d37b7b7-50df-4392-95c9-65a636417757"
+api_key = "15641be3-c677-4d18-bbb9-81b040840131"
 
 if __name__ == "__main__":
     # Set backend URL
